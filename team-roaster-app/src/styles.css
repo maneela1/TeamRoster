@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+.logo{
+    width:100px;
+}
+.no-padding{
+    padding:0px!important;
+}
+
+.navbar-default{
+    background-color:lightblue;
+}
+
+.separator{
+    font-size: x-large;
+}
+
+.right-navbar{
+    float:right;
+    margin-top:40px;
+    margin-right: 25px;
+}
+
+.right-navbar > li{
+    padding : 0 10px;
+}

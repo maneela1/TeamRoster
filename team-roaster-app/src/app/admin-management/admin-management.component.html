@@ -1,0 +1,44 @@
+<div class = "container-fluid">
+    <div class="panel panel-default">
+        <div class="panel-heading" (click) ="showAdmin = !showAdmin">
+            <h4 class="panel-title">
+               Role Management
+            </h4>
+        </div>
+    
+            <div class="panel-body" *ngIf = "showAdmin">
+
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>S.No</th>
+                        <th>Role Name</th>
+                        <th>Roles</th>
+                        <th>Train</th>
+                        <th>Scrum Team</th>
+                        <th>Users</th>
+                        <th>My Team</th>
+                        <th>AuditLog</th>
+                        <th>Review Options</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                 <tr *ngFor ="let row of roleMangementData">
+                        <td>{{row.sno}}</td>
+                        <td><a href = "#">{{row.roleName}}</a></td>
+                        <td>{{row.roles}}</td>
+                        <td>{{row.train}}</td>
+                        <td>{{row.scrumTeam}}</td>
+                        <td>{{row.users}}</td>
+                        <td>{{row.myTeam}}</td>
+                        <td><a href ="#">AuditLog</a></td>
+                        <td></td>
+                      </tr>
+                     
+                    </tbody>
+                  </table>
+            </div>
+       
+    </div>
+</div>
+
