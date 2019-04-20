@@ -1,14 +1,28 @@
 <div class = "container-fluid">
+  <div class  =" form-group right-align">
+    <select class= "dropdown-roles">
+      <option >Roles</option>
+    </select>
+    <!--Added Export functionality-->
+    <button class = "btn btn-primary">Export Data</button>
+  </div>
+  <div class= "clear-fix"></div>
     <div class="panel panel-default">
         <div class="panel-heading" (click) ="showAdmin = !showAdmin">
             <h4 class="panel-title">
-               Role Management
+              <span class="glyphicon glyphicon-menu-down"  *ngIf = "showAdmin" aria-hidden="true"></span>  
+              <span class="glyphicon glyphicon-menu-right"  *ngIf = "!showAdmin" aria-hidden="true"></span> Role Management
             </h4>
+            <div class="access-roles">
+                <span class="glyphicon glyphicon-menu-down"  *ngIf = "showAdmin" aria-hidden="true">Management</span>
+                <span class="glyphicon glyphicon-menu-down"  *ngIf = "showAdmin" aria-hidden="true">Add user</span>
+            </div>
+           
         </div>
     
             <div class="panel-body" *ngIf = "showAdmin">
 
-                <table class="table table-bordered">
+                <table class="table table-bordered" >
                     <thead>
                       <tr>
                         <th>S.No</th>
@@ -20,6 +34,7 @@
                         <th>My Team</th>
                         <th>AuditLog</th>
                         <th>Review Options</th>
+                                                                   
                       </tr>
                     </thead>
                     <tbody>
