@@ -1,11 +1,32 @@
 <div class="container-fluid">
-    <div class=" form-group right-align">
-        <select class="dropdown-roles">
-      <option >Roles</option>
-    </select>
-        <!--Added Export functionality-->
-        <button class="btn btn-primary" (click)="exportData()">Export Data</button>
+    <div>
+        <div class=" form-group">
+            <div class="form-inline search-box">
+                <button type="button" class="btn btn-primary">Search</button>
+                <input type="email" class="form-control" id="exampleInputEmail3" placeholder="search by attuid or Name">
+
+            </div>
+        </div>
     </div>
+
+    <!-- <div class="clear-fix"></div> -->
+    <div class="trains-data">
+        <div>
+            <button type="button" class="btn btn-primary">+Add Train</button>
+        </div>
+        <div class="form-inline sub-item">
+            <button type="button" class="btn btn-primary">Export Data</button>
+
+            <select class="form-control">
+              <option>OCE-Supplier</option>
+             </select>
+            <select class="form-control">
+              <option>Train</option>
+             </select>
+
+        </div>
+    </div>
+
     <div class="clear-fix"></div>
     <div class="panel panel-default">
         <div class="panel-heading" (click)="showAdmin = !showAdmin">

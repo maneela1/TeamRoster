@@ -1,64 +1,89 @@
 /* You can add global styles to this file, and also import other style files */
 
-
-
-.logo{
-    width:100px;
+.logo {
+    width: 100px;
 }
 
-.inl-blck{
+.inl-blck {
     display: inline-block
 }
-.panel-title{
+
+.panel-title {
     display: inline-block;
 }
-.access-roles{
-    float:right;
+
+.access-roles {
+    float: right;
     text-align: right;
 }
 
-.dropdown-roles{
-    height:34px;
-    margin-right:15px;
+.dropdown-roles {
+    height: 34px;
+    margin-right: 15px;
 }
 
-.active{
-    border-bottom: 5px  solid  black;
-}
-.no-padding{
-    padding:0px!important;
-}
-.right-align{
-    float:right;
-    margin:15px;
+.active {
+    border-bottom: 5px solid black;
 }
 
-.clear-fix{
-    clear:both;
+.no-padding {
+    padding: 0px!important;
 }
 
-.navbar-default{
-    background-color:lightblue;
-}
-.app-name{
-    margin-top:25px;
+.right-align {
+    float: right;
+    margin: 15px;
 }
 
-.separator{
+.clear-fix {
+    clear: both;
+}
+
+.navbar-default {
+    background-color: lightblue;
+}
+
+.app-name {
+    margin-top: 25px;
+}
+
+.separator {
     font-size: xx-large;
     margin-top: 8px;
-
 }
 
-thead{
-    background-color:lightgray;
+thead {
+    background-color: lightgray;
 }
-.right-navbar{
-    float:right;
-    margin-top:40px;
+
+.sub-item {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.search-box {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.trains-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px
+}
+
+.right-navbar {
+    float: right;
+    margin-top: 40px;
     margin-right: 25px;
 }
 
-.right-navbar > li{
-    padding : 0 10px;
+.right-navbar>li {
+    padding: 0 10px;
+}
+
+.form-inline>* {
+    margin-right: 10px;
 }

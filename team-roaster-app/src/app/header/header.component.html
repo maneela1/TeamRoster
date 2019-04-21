@@ -1,17 +1,16 @@
 <nav class="navbar navbar-default">
     <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li><a href="#" class = "no-padding"><img class = "logo" src = "../../assets/att-logo.png"/></a></li>
-        <li><a href="#" class ="separator">|</a></li>
-        <li><span class ="inl-blck app-name"> Team Roster</span></li>
-      </ul>
+        <ul class="nav navbar-nav">
+            <li>
+                <a href="#" class="no-padding"><img class="logo" src="../../assets/att-logo.png" /></a>
+            </li>
+            <li><a href="#" class="separator">|</a></li>
+            <li><span class="inl-blck app-name"> Team Roster</span></li>
+        </ul>
 
-      <ul class="nav navbar-nav right-navbar">
-        <li   [routerLink]="['admin']"
-        [routerLinkActive]="['active']">Admin</li>
-        <li>User Management</li>
-      </ul>
+        <ul class="nav navbar-nav right-navbar">
+            <li [routerLink]="['admin']" [routerLinkActive]="['active']">Admin</li>
+            <li [routerLink]="['user-management']" [routerLinkActive]="['active']">User Management</li>
+        </ul>
     </div>
-  </nav>
-
-  
+</nav>
